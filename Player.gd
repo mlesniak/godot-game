@@ -4,6 +4,9 @@ export var texture: Texture
 export var gamepad: int = 0
 export var speed: int = 3000
 
+export var catchable: bool = false
+export var score: int = 0
+
 func _ready():
 	$Sprite.texture = texture
 

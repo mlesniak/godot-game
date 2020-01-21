@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://Bounds.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/owl.png" type="Texture" id=5]
 [ext_resource path="res://assets/penguin.png" type="Texture" id=6]
+[ext_resource path="res://Obstacle.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/House In a Forest Loop.ogg" type="AudioStream" id=8]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 1 )
@@ -28,3 +30,17 @@ position = Vector2( 390, 530 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 6 )
 gamepad = 1
+
+[node name="Obstacles" type="Node2D" parent="."]
+
+[node name="Obstacle" parent="Obstacles" instance=ExtResource( 7 )]
+position = Vector2( 540, 370 )
+scale = Vector2( 16.6461, 1.48698 )
+
+[node name="Obstacle2" parent="Obstacles" instance=ExtResource( 7 )]
+position = Vector2( 840, 380 )
+scale = Vector2( 1.77597, -10.5222 )
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+autoplay = true

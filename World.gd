@@ -1,5 +1,7 @@
 extends Node2D
 
+func _ready():
+	$music.play()
 
 func _process(delta):
 	if Input.is_action_just_released("exit"):
