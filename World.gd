@@ -12,6 +12,8 @@ func _ready():
 	$Player_2.catchable = false
 	$Player_2.position.x = get_viewport().size.x
 	$Player_2.position.y = get_viewport().size.y / 2 
+	
+	$Timer.start()
 
 func _process(delta):
 	if Input.is_action_just_released("exit"):

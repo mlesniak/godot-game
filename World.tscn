@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://Bounds.tscn" type="PackedScene" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://assets/Xolonium-Regular.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://Score_1.gd" type="Script" id=10]
 [ext_resource path="res://Score_2.gd" type="Script" id=11]
+[ext_resource path="res://Timer.gd" type="Script" id=12]
+[ext_resource path="res://Time.gd" type="Script" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -68,6 +70,21 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
 align = 2
 script = ExtResource( 11 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+script = ExtResource( 12 )
+
+[node name="Time" type="Label" parent="Timer"]
+margin_left = 471.151
+margin_top = 1.8746
+margin_right = 782.151
+margin_bottom = 79.8746
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 1
+script = ExtResource( 13 )
 [connection signal="hit" from="Player_1" to="Score_1" method="_on_Player_1_hit"]
 [connection signal="hit" from="Player_1" to="." method="_on_Player_hit"]
 [connection signal="hit" from="Player_2" to="Score_2" method="_on_Player_2_hit"]
