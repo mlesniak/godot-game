@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export var texture: Texture
 export var gamepad: int = 0
-export var speed: int = 50
+export var speed: int = 3000
 
 func _ready():
 	$Sprite.texture = texture
@@ -20,6 +20,6 @@ func compute_velocity():
 
 func _process(delta):
 	var velocity = compute_velocity()
-	move_and_collide(velocity)
+	move_and_slide(velocity)
 	
 	
