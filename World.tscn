@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://Bounds.tscn" type="PackedScene" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://Score_2.gd" type="Script" id=11]
 [ext_resource path="res://Timer.gd" type="Script" id=12]
 [ext_resource path="res://Time.gd" type="Script" id=13]
+[ext_resource path="res://Sprite.gd" type="Script" id=14]
+[ext_resource path="res://assets/cross.png" type="Texture" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -85,7 +87,19 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
 align = 1
 script = ExtResource( 13 )
+
+[node name="CatchablePlayer" type="Sprite" parent="."]
+position = Vector2( 480.52, 44.9902 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 14 )
+
+[node name="Sprite" type="Sprite" parent="CatchablePlayer"]
+position = Vector2( 15.2246, 6.87349 )
+scale = Vector2( 0.444864, 0.444864 )
+texture = ExtResource( 15 )
+[connection signal="catchable_player" from="." to="CatchablePlayer" method="_on_World_catchable_player"]
 [connection signal="hit" from="Player_1" to="Score_1" method="_on_Player_1_hit"]
 [connection signal="hit" from="Player_1" to="." method="_on_Player_hit"]
 [connection signal="hit" from="Player_2" to="Score_2" method="_on_Player_2_hit"]
 [connection signal="hit" from="Player_2" to="." method="_on_Player_hit"]
+[connection signal="timeout" from="Timer" to="." method="switch_side"]
