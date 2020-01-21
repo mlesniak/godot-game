@@ -34,8 +34,13 @@ func _on_Player_hit(source, target):
 	$Player_1.position.y = get_viewport().size.y / 2 
 
 	$Player_2.catchable = !$Player_2.catchable
-	$Player_2.position.x = get_viewport().size.x
+#	$Player_2.position.x = get_viewport().size.x
+	# Dirty hack ¯\_(ツ)_/¯
+	$Player_2.position.x = 1280
 	$Player_2.position.y = get_viewport().size.y / 2 
+	
+	$Timer.stop()
+	$Timer.start()
 	
 func switch_side():
 	$Player_1.catchable = !$Player_1.catchable	
