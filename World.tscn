@@ -13,6 +13,7 @@ script = ExtResource( 1 )
 [node name="Bounds" parent="." instance=ExtResource( 2 )]
 
 [node name="Background" type="Sprite" parent="."]
+visible = false
 position = Vector2( 639.235, 399.288 )
 scale = Vector2( 1.41935, 0.886136 )
 texture = ExtResource( 3 )
@@ -26,3 +27,4 @@ texture = ExtResource( 5 )
 position = Vector2( 390, 530 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 6 )
+gamepad = 1
