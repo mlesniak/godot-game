@@ -1,0 +1,96 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Obstacle.tscn" type="PackedScene" id=1]
+
+[node name="Obstacles" type="Node2D"]
+position = Vector2( 0, 0.526794 )
+
+[node name="Obstacle" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 370 )
+
+[node name="Obstacle2" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 490, 370 )
+
+[node name="Obstacle3" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 540, 370 )
+
+[node name="Obstacle4" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 480 )
+
+[node name="Obstacle5" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 530 )
+
+[node name="Obstacle6" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 580 )
+
+[node name="Obstacle17" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 629.473 )
+
+[node name="Obstacle18" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 679.473 )
+
+[node name="Obstacle19" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 729.473 )
+
+[node name="Obstacle7" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 190, 240 )
+
+[node name="Obstacle8" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 190, 290 )
+
+[node name="Obstacle9" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 190, 340 )
+
+[node name="Obstacle10" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 190, 390 )
+
+[node name="Obstacle11" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 240, 390 )
+
+[node name="Obstacle12" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 290, 390 )
+
+[node name="Obstacle13" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 760, 510 )
+
+[node name="Obstacle22" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 590, 370 )
+
+[node name="Obstacle14" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 810, 510 )
+
+[node name="Obstacle20" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 640, 370 )
+
+[node name="Obstacle15" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 860, 510 )
+
+[node name="Obstacle23" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 690, 370 )
+
+[node name="Obstacle16" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 860, 510 )
+
+[node name="Obstacle24" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 910, 510 )
+
+[node name="Obstacle25" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 910, 459.473 )
+
+[node name="Obstacle26" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 910, 409.473 )
+
+[node name="Obstacle27" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 910, 362.5 )
+
+[node name="Obstacle28" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 960, 362.5 )
+
+[node name="Obstacle29" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1010, 362.5 )
+
+[node name="Obstacle30" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1060, 362.5 )
+
+[node name="Obstacle21" type="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 690, 370 )
